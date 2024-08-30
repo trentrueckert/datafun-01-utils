@@ -3,25 +3,7 @@
 Module: Rueckert Analytics - Data Interpretations
 
 This module provides a simple, reusable foundation for my analytics projects. 
-When we work hard to write useful code, we want it to be reusable.
-A good byline could be used in every Python analytics project we do.
-
-Process:
-
-We don't write code from top to bottom; instead, we often write it from the outside in.
-Here's what a first draft of my utils_case.py might look like:
-
-1. I start with this docstring at the very beginning.
-   I use it to clarify the purpose of my Python file and organize my thoughts.
-   
-2. I'll declare a global variable for my byline string and just set it to some simple text.
-
-3. I'll declare a main() function for my module. When I run this script, I can use main() to test my byline.
-
-4. I'll add the boilerplate conditional execution code so I only run the main() function when 
-   this script is executed directly (but not when I import it into another file).
-
-I'll test it in an online interpreter to ensure this version runs correctly before continuing.
+This docstring helps describe what is going on for better clarification for any viewer.
 '''
 
 #####################################
@@ -39,9 +21,6 @@ byline: str = 'Rueckert Analytics: Data Interpretations'
 # This function will simply print the byline to the console.
 # Add a type hint to indicate that this function doesn't return anything when called 
 # (that is, it has a Python type of None).
-# It doesn't need any additional information passed in, 
-# so there's nothing needed inside the parentheses.
-# Everything afer the colon (:) must be indented (usually 4 spaces)
 
 def main() -> None:
     '''Print the byline to the console when this function is called.'''
@@ -67,10 +46,6 @@ It'll return my byline to whatever calls the get_byline() function.
 I'll update the main() function to use the new get_byline() function.
 
 Same conditional boilerplate at the end. 
-
-I'll test this version before adding more code that shows:
-- my ability to declare variables of different types
-- my ability to use Python to calculate basic descriptive statistics. '''
 
 #####################################
 # Declare a global variable named byline.
